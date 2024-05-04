@@ -1,0 +1,77 @@
+:root{
+    --primary:#ff00ff;
+    --dark: hsl(234, 100%, 47%);
+    --grey: #CCC;
+    --light: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color:var(--dark);
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid var(--primary);
+}
+
+h1{
+    font-family: Helvetica, sans-serif;
+    color: white;
+    font-size: 42px;
+    text-transform: uppercase;
+    text-shadow: -4px 1px var(--primary);
+}
+
+#gameContainer{
+    text-align: center;
+}
+
+#gameBoard{
+    border: 2px solid;
+    border-color:  hsl(234, 100%, 57%);
+    margin-top: 20px;
+}
+
+#scoreText{
+    font-family: Helvetica, sans-serif;
+    font-size: 100px
+}
+
+#controls button{
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 150px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: 	white;
+
+}
+
+#resetBtn{
+    background: linear-gradient(to right, hsl(300, 100%, 50%) 25%, hsl(234, 100%, 47%) 50%);
+}
+
+#pauseBtn{
+    background: linear-gradient(to right, #DEFE47 25%, hsl(234, 100%, 47%) 50%);
+}
+
+#unpauseBtn{
+    background: linear-gradient(to right, #00B3FE 25%, hsl(234, 100%, 47%) 50%);
+}

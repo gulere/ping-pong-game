@@ -1,5 +1,5 @@
 //eces ping-pong game
-//tinkering 11
+//game tinkering 1
 
 const gameBoard = document.querySelector("#gameBoard");
 const ctx = gameBoard.getContext("2d");
